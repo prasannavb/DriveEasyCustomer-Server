@@ -49,6 +49,11 @@ app.use(express.json());
         console.log("error") 
     } 
 
+app.get('/',async(req,res)=>
+{
+  res.send("Hello")
+})
+
 //Create a new user
 
 app.post("/CreateUser",async(req,res)=>
